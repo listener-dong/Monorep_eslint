@@ -1,0 +1,4 @@
+{
+  // 继承根目录的配置
+  "extends": "../../babel.config.js"
+}
