@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "pnpm recursive exec -- eslint ."
+    "lint": "pnpm recursive exec -- eslint .",
+    "lint:styles": "pnpm run -r lint:styles"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -26,7 +27,15 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "lint-staged": "^11.1.2",
+    "postcss": "^8.4.36",
+    "postcss-html": "^1.6.0",
+    "postcss-scss": "^4.0.9",
     "prettier": "^2.4.1",
+    "stylelint": "^16.2.1",
+    "stylelint-config-recess-order": "^5.0.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
     "vue-template-compiler": "^2.6.14"
   },
   "keywords": [],
