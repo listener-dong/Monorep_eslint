@@ -3,5 +3,6 @@ module.exports = {
   extends: ["./../../.eslintrc.js"],
   rules: {
     "no-var": "error",
+    "no-console": "warn",
   },
 };

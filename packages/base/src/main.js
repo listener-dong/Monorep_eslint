@@ -5,6 +5,10 @@ import store from "./store";
 
 Vue.config.productionTip = false;
 
+let ab = "abc";
+
+console.log(ab);
+
 new Vue({
   router,
   store,
