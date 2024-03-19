@@ -1,5 +1,6 @@
 // .stylelintrc.js
 module.exports = {
+  processors: ['stylelint-processor-html'],
   extends: [
     "stylelint-config-standard",
     "stylelint-config-html/vue",

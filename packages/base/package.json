@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service serve",
-    "lint:styles": "stylelint \"**/*.{css,scss,less,vue}\""
+    "lint:styles": "stylelint \"**/*.{css,scss,less,vue}\" --fix"
   },
   "dependencies": {},
   "devDependencies": {},
