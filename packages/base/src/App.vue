@@ -3,6 +3,7 @@
     <div class="hello-world">Hello world</div>
     <div class="hello">ONLY</div>
     <div class="hello-scss">ONLY-SCSS</div>
+    <el-button type="primary">TEST</el-button>
     <nav>
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
