@@ -1,7 +1,7 @@
 module.exports = {
   // 继承根目录的配置
-  extends: ["./../../.eslintrc.js"],
+  extends: ['./../../.eslintrc.js'],
   rules: {
-    "no-var": "error",
-  },
-};
+    'no-var': 'error'
+  }
+}

@@ -1,16 +1,16 @@
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
-let ab = "abc";
+// let ab = 'abc'
 
-console.log(ab);
+// console.log(ab)
 
 new Vue({
   router,
   store,
-  render: (h) => h(App),
-}).$mount("#app");
+  render: h => h(App)
+}).$mount('#app')

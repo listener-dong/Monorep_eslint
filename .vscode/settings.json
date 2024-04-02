@@ -4,7 +4,7 @@
   "files.autoSave": "off",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": "explicit"
   },
   "stylelint.validate": ["css", "scss", "html"],
   "stylelint.config": {},
