@@ -10,6 +10,11 @@ import HelloWorld from './components/HelloWorld.vue'
 import { Bar } from './components/HelloWorld'
 export default {
   components: { HelloWorld, Bar },
+  data() {
+    return {
+      data: []
+    }
+  },
   mounted() {
     // console.log('hello')
   }
