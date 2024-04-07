@@ -8,7 +8,8 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ["**/*.(css|html|vue)"],
+      // 这里不需要写 css 写了 会被忽略掉
+      files: ["**/*.(html|vue)"],
       customSyntax: "postcss-html",
     },
     {

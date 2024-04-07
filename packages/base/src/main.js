@@ -1,20 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
-import store from './store'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import './index.css'
 
-Vue.config.productionTip = false
-
-// var abc = 'abc'
-
-// console.log(abc)
-
-Vue.use(ElementUI)
+let abc = 'abc'
+console.log(abc)
 
 new Vue({
-  router,
-  store,
   render: h => h(App)
 }).$mount('#app')
