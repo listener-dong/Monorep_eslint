@@ -9,7 +9,9 @@ module.exports = {
     'plugin:prettier/recommended'
   ],
   parserOptions: {
-    parser: '@babel/eslint-parser'
+    ecmaFeatures: {
+      jsx: true
+    }
   },
   rules: {
     'no-console': 'warn',
