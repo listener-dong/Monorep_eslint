@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .ts,.tsx,.jsx,.js,.vue --fix --quiet ./",
+    "lint:eslint": "eslint --ext .ts,.tsx,.jsx,.js,.vue --fix --quiet ./",
     "lint:styles": "stylelint \"**/*.{css,scss,less,vue}\" --fix"
   },
   "dependencies": {},

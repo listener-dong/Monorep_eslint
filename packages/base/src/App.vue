@@ -11,6 +11,7 @@ import { Bar } from './components/HelloWorld'
 export default {
   components: { HelloWorld, Bar },
   mounted() {
+    let abc = '890'
     console.log('hello')
   }
 }
