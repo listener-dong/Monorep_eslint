@@ -20,6 +20,7 @@ module.exports = {
       jsx: true
     }
   },
+  // 规则地址：https://zh-hans.eslint.org/docs/latest/rules/
   rules: {
     // 禁止使用 console 对象，将其视为警告。
     'no-console': 'warn',
