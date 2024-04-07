@@ -11,7 +11,7 @@ import { Bar } from './components/HelloWorld'
 export default {
   components: { HelloWorld, Bar },
   mounted() {
-    console.log('hello')
+    // console.log('hello')
   }
 }
 </script>

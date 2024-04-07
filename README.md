@@ -44,3 +44,13 @@ module.exports = {
   }
 }
 ```
+
+5. .stylelint.js 进行统一样式代码规范子应用可以继承根目录的配置
+   ```json
+  {
+    "stylelint": {
+      "extends": "../../.stylelintrc.js",
+      "rules": {}
+    }
+  }
+   ```

@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint:eslint": "eslint --ext .ts,.tsx,.jsx,.js,.vue --fix --quiet ./",
-    "lint:styles": "stylelint \"**/*.{css,scss,less,vue}\" --fix"
+    "lint:eslint": "eslint \"**/*.{js,jsx,vue}\" --fix",
+    "lint:styles": "stylelint \"**/*.{css,scss,vue}\" --fix",
+    "lint": "pnpm lint:eslint && pnpm lint:styles"
   },
   "dependencies": {},
   "devDependencies": {},
