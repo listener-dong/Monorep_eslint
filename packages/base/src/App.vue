@@ -1,5 +1,7 @@
 <template>
   <div>
+    <p class="tip">I <span class="ti">Comeing</span></p>
+    <div class="test">Nan Fang hospity</div>
     <el-button type="success">Submit</el-button>
     <el-table />
     <el-table :data="data" style="width: 100%">
@@ -33,10 +35,14 @@ export default {
 }
 </script>
 
-<style>
-div {
-  position: relative;
-  top: 10px;
-  color: red;
+<style lang="scss" scoped>
+@import url('./index.scss');
+
+.tip {
+  color: green;
+
+  .ti {
+    color: blue;
+  }
 }
 </style>
