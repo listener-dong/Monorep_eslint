@@ -1,5 +1,6 @@
 <template>
   <div>
+    <ql-button />
     <p class="tip">I <span class="ti">Comeing</span></p>
     <div class="test">Nan Fang hospity</div>
     <el-button type="success">Submit</el-button>
@@ -21,8 +22,9 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import { Bar } from './components/HelloWorld'
+import { QlButton } from 'ql-components'
 export default {
-  components: { HelloWorld, Bar },
+  components: { HelloWorld, Bar, QlButton },
   data() {
     return {
       data: []

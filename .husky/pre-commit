@@ -6,5 +6,5 @@
 
 PATH="/usr/local/bin:$PATH"
 
-# Perform lint check on files in the staging area through .lintstagedrc configuration
+# 通过 .lintstagedrc(根目录文件) 配置，在暂存区的文件上执行 lint 检查。
 pnpm exec lint-staged

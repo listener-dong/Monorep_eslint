@@ -11,7 +11,7 @@ module.exports = {
     'plugin:vue/essential',
     // 使用 ESLint 官方的推荐规则，包含了一些常用的代码风格规范
     'eslint:recommended',
-    // 使用 Prettier 插件的推荐规则，将 Prettier 代码格式化工具集成到 ESLint 中
+    // 使用 Prettier 插件的推荐规则，将 Prettier 代码格式化工具集成到 ESLint 中，解决eslint与prettier的冲突问题
     'plugin:prettier/recommended'
   ],
   parserOptions: {
@@ -75,6 +75,7 @@ module.exports = {
           'renderError'
         ]
       }
-    ]
+    ],
+    'vue/multi-word-component-names': 'off'
   }
 }
