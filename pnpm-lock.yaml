@@ -103,15 +103,21 @@ importers:
         specifier: ^2.6.14
         version: 2.7.16
 
-  packages/base:
+  micro/base:
     dependencies:
       ql-components:
         specifier: workspace:^
-        version: link:../components
+        version: link:../../packages/components
+    devDependencies:
+      ql-styles:
+        specifier: workspace:^
+        version: link:../../packages/styles
+
+  micro/pkg-1: {}
 
   packages/components: {}
 
-  packages/pkg-1: {}
+  packages/styles: {}
 
 packages:
 

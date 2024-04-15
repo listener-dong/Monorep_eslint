@@ -11,7 +11,10 @@
     "lint:styles": "stylelint \"**/*.{css,scss,vue}\" --fix",
     "lint": "pnpm lint:eslint && pnpm lint:styles"
   },
-  "dependencies": {
-    "ql-components": "workspace:^"
+  "dependencies": {},
+  "devDependencies": {},
+  "stylelint": {
+    "extends": "../../.stylelintrc.cjs",
+    "rules": {}
   }
 }

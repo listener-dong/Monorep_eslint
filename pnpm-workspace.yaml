@@ -1,2 +1,5 @@
 packages:
+  # 公共组件、方法和样式
   - 'packages/*'
+  # 微前端
+  - 'micro/*'
