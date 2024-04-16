@@ -12,9 +12,11 @@
     "lint": "pnpm lint:eslint && pnpm lint:styles"
   },
   "dependencies": {
-    "ql-components": "workspace:^"
+    "ql-components": "workspace:^",
+    "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
-    "ql-styles": "workspace:^"
+    "ql-styles": "workspace:^",
+    "ql-tailwind-config": "workspace:^"
   }
 }

@@ -1,5 +1,7 @@
 <template>
   <div>
+    <!-- tailwindcss-config -->
+    <div class="text-2xl text-yellow-800">TailWindCss-Config</div>
     <ql-button />
     <p class="tip">I <span class="ti">Comeing</span></p>
     <div class="test">Nan Fang hospity</div>
