@@ -1,12 +1,18 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue2'
 import vueJsx from '@vitejs/plugin-vue2-jsx'
+import path from 'path'
 // 压缩JavaScript
 // import viteCompression from 'vite-plugin-compression'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(), vueJsx({})],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  },
   build: {
     // https://cn.vitejs.dev/guide/build.html#browser-compatibility
     target: 'es2015',

@@ -5,12 +5,12 @@
 export default {
   data() {
     return {
-      msg: 'i am sfc jsx'
+      msg: 'i am sfc HelloWorld'
     }
   },
   created() {
     setTimeout(() => {
-      this.msg = 'i am sfc jsxxxx'
+      this.msg = 'i am sfc HelloWorld_setTimeout'
     }, 1000)
   },
   render() {

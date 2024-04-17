@@ -1,0 +1,9 @@
+{
+  // jsconfig.json 不支持继承功能，所以需要手动配置
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"]
+    }
+  }
+}
