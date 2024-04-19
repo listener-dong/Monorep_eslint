@@ -7,7 +7,9 @@ import 'ql-styles/tailwind.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
-// import './style/tailwind.css'
+import 'virtual:svg-icons-register' // 支持 svg
+
+import 'ql-styles/index.scss'
 
 Vue.use(ElementUI)
 // let abc = 'abc'

@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "ql-styles": "workspace:^",
-    "ql-tailwind-config": "workspace:^"
+    "ql-tailwind-config": "workspace:^",
+    "vite-plugin-svg-icons": "^2.0.1"
   }
 }
