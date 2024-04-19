@@ -1,1 +1,2 @@
-export * from './button/index.js'
+export * from './button/index'
+export * from './SvgIcon/index'
