@@ -1,1 +1,1 @@
-export const QlButton = () => import('./Button.vue')
+export const QlButton = () => import('./src/index.vue')

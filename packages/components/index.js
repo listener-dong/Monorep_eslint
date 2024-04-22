@@ -1,2 +1,2 @@
-export * from './button/index'
+export * from './Button/index'
 export * from './SvgIcon/index'
