@@ -1,4 +1,7 @@
 {
   "name": "ql-styles",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "devDependencies": {
+    "element-theme-dark": "^1.0.3"
+  }
 }

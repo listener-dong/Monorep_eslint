@@ -1,5 +1,6 @@
 <template>
   <div>
+    <i class="el-icon-eleme" style="font-size: 40px"></i>
     <QlSvgIcon
       name="vue"
       color="red"
@@ -92,14 +93,22 @@
     </el-card>
     <div class="w-2/3 mx-auto mt-10">
       <MyTable></MyTable>
+      <!-- 90 -->
+      <el-table :data="tableData" style="width: 100%" class="mt-10" border>
+        <el-table-column prop="date" label="日期" width="180">
+        </el-table-column>
+        <el-table-column prop="name" label="姓名" width="180">
+        </el-table-column>
+        <el-table-column prop="address" label="地址"> </el-table-column>
+      </el-table>
     </div>
   </div>
 </template>
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
-import { Bar } from './components/HelloWorld'
+import HelloWorld from '@/components/HelloWorld'
+import { Bar } from '@/components/Bar'
 import { QlButton, QlSvgIcon } from 'ql-components'
-import MyTable from '@/components/Table.vue'
+import MyTable from '@/components/MyTable'
 
 export default {
   components: { HelloWorld, Bar, QlButton, QlSvgIcon, MyTable },
@@ -153,7 +162,29 @@ export default {
           { required: true, message: '请选择活动资源', trigger: 'change' }
         ],
         desc: [{ required: true, message: '请填写活动形式', trigger: 'blur' }]
-      }
+      },
+      tableData: [
+        {
+          date: '2016-05-02',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
+        },
+        {
+          date: '2016-05-04',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1517 弄'
+        },
+        {
+          date: '2016-05-01',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1519 弄'
+        },
+        {
+          date: '2016-05-03',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1516 弄'
+        }
+      ]
     }
   },
   mounted() {},

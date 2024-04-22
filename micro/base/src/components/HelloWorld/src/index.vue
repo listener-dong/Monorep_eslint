@@ -3,6 +3,7 @@
 </template> -->
 <script lang="jsx">
 export default {
+  name: 'HelloWorld',
   data() {
     return {
       msg: 'i am sfc HelloWorld'

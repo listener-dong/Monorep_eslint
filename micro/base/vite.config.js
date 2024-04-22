@@ -11,6 +11,7 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 export default defineConfig({
   plugins: [
     vue(),
+    // 支持使用 JSX 语法编写 Vue 组件
     vueJsx({}),
     createSvgIconsPlugin({
       // 指定路径在你的src里的svg存放文件
@@ -20,9 +21,20 @@ export default defineConfig({
     })
   ],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src')
-    }
+    // 配置模块别名
+    alias: [
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, 'src')
+      },
+      // 处理 vue2.7 + vite 导致 el-table 不展示的问题
+      {
+        find: 'vue',
+        replacement: 'vue/dist/vue.esm.js'
+      }
+    ],
+    // 导入模块时省略文件的扩展名
+    extensions: ['.js', '.vue', '.jsx', 'tsx', '.json']
   },
   build: {
     // https://cn.vitejs.dev/guide/build.html#browser-compatibility
