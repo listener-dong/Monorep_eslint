@@ -3,11 +3,11 @@
     "prettier --cache --ignore-unknown  --write",
     "eslint --cache --fix"
   ],
-  "{!(package)*.json,*.code-snippets,.!({browserslist,nvm})*rc}": [
+  "{!(package)*.json, *.code-snippets, .!({browserslist,nvm})*rc}": [
     "prettier --cache --write --parser json"
   ],
   "package.json": ["prettier --cache --write"],
-  "!(packages/styles)**,*.vue": [
+  "!(packages/styles)**, *.vue": [
     "prettier --write",
     "eslint --cache --fix",
     "stylelint --fix --allow-empty-input"
