@@ -25,7 +25,7 @@ module.exports = {
     // 基于 eslint-plugin-vue 双标签无内容时自动闭合
     'vue/html-self-closing': 'warn',
     // 禁止使用 console 对象，将其视为警告。
-    'no-console': 'error',
+    'no-console': 'warn',
     // 禁止使用 var 声明变量，将其视为错误。
     'no-var': 'error',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',

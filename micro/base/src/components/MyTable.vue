@@ -68,10 +68,10 @@ export default {
   },
   methods: {
     handleEdit(index, row) {
-      console.log(index, row)
+      console.log('111', index, row)
     },
     handleDelete(index, row) {
-      console.log(index, row)
+      console.log('222', index, row)
     }
   }
 }
