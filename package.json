@@ -13,6 +13,9 @@
     "prepare": "husky",
     "preinstall": "npx only-allow pnpm"
   },
+  "resolutions": {
+    "sass": "1.32.12"
+  },
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^2.7.16",
@@ -39,7 +42,7 @@
     "postcss-html": "^1.6.0",
     "postcss-scss": "^4.0.9",
     "prettier": "^2.4.1",
-    "sass": "^1.75.0",
+    "sass": "^1.32.12",
     "sass-loader": "^14.1.1",
     "stylelint": "^16.2.1",
     "stylelint-config-recess-order": "^5.0.0",

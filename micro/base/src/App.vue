@@ -13,6 +13,7 @@
     <p class="tip">I <span class="ti">Comeing</span></p>
     <div class="test">Nan Fang hospity</div>
     <el-button type="success">Submit</el-button>
+    <el-button type="warning">warning</el-button>
     <h1>hello</h1>
     <HelloWorld />
     <Bar />
@@ -23,6 +24,16 @@
       @change="changeTheme"
     >
     </el-switch>
+    <!-- 切换 -->
+    <div class="mt-4">
+      <el-switch
+        v-model="isDefauit"
+        active-color="#13ce66"
+        inactive-color="#ff4949"
+        @change="changeDefauit"
+      >
+      </el-switch>
+    </div>
 
     <el-card class="w-2/3 mx-auto mt-4">
       <el-form
@@ -184,7 +195,8 @@ export default {
           name: '王小虎',
           address: '上海市普陀区金沙江路 1516 弄'
         }
-      ]
+      ],
+      isDefauit: false
     }
   },
   mounted() {},
@@ -209,6 +221,15 @@ export default {
     },
     resetForm(formName) {
       this.$refs[formName].resetFields()
+    },
+    changeDefauit(val) {
+      if (val) {
+        // document.documentElement.classList.add('dark')
+        document.body.className = 'defauitTheme'
+        // document.documentElement.classList.add('defauitTheme')
+      } else {
+        document.body.className = ''
+      }
     }
   }
 }

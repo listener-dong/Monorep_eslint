@@ -83,7 +83,7 @@ module.exports = {
       { type: 'at-rule', hasBlock: true },
       'rules'
     ],
-    "number-max-precision": 5, // 限制小数点后位数 默认4
-    "no-invalid-position-at-import-rule": null
+    'number-max-precision': 5, // 限制小数点后位数 默认4
+    'no-invalid-position-at-import-rule': null, // 不约束 @import 引入的位置
   }
 }

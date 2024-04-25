@@ -50,5 +50,13 @@ export default defineConfig({
         }
       }
     }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // 引入全局 scss 入口文件
+        additionalData: `@import "@/style/index.scss";`
+      }
+    }
   }
 })

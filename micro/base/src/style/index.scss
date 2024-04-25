@@ -1,0 +1,26 @@
+/* 改变主题色变量 $--color-primary: teal; 
+$E: null;
+$B: null; */
+
+.defauitTheme {
+  @import './defauit';
+
+  /* 改变 icon 字体路径变量，必需 
+  $--font-path: 'element-ui/lib/theme-chalk/fonts'; */
+
+  @import 'element-ui/packages/theme-chalk/src/index';
+
+  .el-button + .el-button,
+  .el-checkbox.is-bordered + .el-checkbox.is-bordered {
+    margin-left: 10px;
+  }
+}
+
+/*
+1. element更换主题色sass 版本出现大量警告 因为element-ui版本较低，高版本对部分计算方式有所区别
+解决：https://juejin.cn/post/7070338151075577863
+
+2. sass 2.0.0版本之后全局赋值将无法声明新变量。
+出现 $E: $element !global; root stylesheet 的报错
+解决：https://blog.csdn.net/Jwybwy/article/details/123879377
+*/
