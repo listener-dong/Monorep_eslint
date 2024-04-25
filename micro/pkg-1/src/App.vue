@@ -1,13 +1,15 @@
 <template>
   <div>
-    <h1>hello</h1>
+    <h1 class="text-3xl font-black text-yellow-500">PKG-1</h1>
     <HelloWorld />
     <Bar />
+    <el-button type="danger">子应用</el-button>
+    <el-button type="primary">Primary</el-button>
   </div>
 </template>
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import { Bar } from './components/HelloWorld'
+import HelloWorld from '@/components/HelloWorld'
+import { Bar } from '@/components/Bar'
 export default {
   components: { HelloWorld, Bar },
   data() {
@@ -16,15 +18,10 @@ export default {
     }
   },
   mounted() {
+    console.log('location', location)
     // console.log('hello')
   }
 }
 </script>
 
-<style>
-div {
-  position: relative;
-  top: 10px;
-  color: red;
-}
-</style>
+<style></style>

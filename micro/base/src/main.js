@@ -6,11 +6,13 @@ import 'ql-styles/tailwind.css'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-
 import 'virtual:svg-icons-register' // 支持 svg
-
 import 'ql-styles/index.scss'
-// import './style/index.scss'
+
+import microApp from '@micro-zoe/micro-app'
+
+// 微前端-运行
+microApp.start()
 
 Vue.use(ElementUI)
 // let abc = 'abc'

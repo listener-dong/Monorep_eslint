@@ -109,6 +109,11 @@
         <el-table-column prop="address" label="地址" />
       </el-table>
     </div>
+    <el-card class="w-1/2 mt-4">
+      <h1>子应用👇</h1>
+      <!-- name：应用名称, url：应用地址 -->
+      <micro-app name="my-app" url="http://localhost:3001/" iframe />
+    </el-card>
   </div>
 </template>
 <script>
@@ -221,10 +226,11 @@ export default {
     changeDefauit(val) {
       if (val) {
         // document.documentElement.classList.add('dark')
-        document.body.className = 'defauitTheme'
-        // document.documentElement.classList.add('defauitTheme')
+        // document.body.className = 'defauitTheme'
+        document.documentElement.classList.add('defauitTheme')
       } else {
-        document.body.className = ''
+        // document.body.className = ''
+        document.documentElement.classList.remove('defauitTheme')
       }
     }
   }
@@ -232,7 +238,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('./index.scss');
+@import './index.scss';
 
 .tip {
   color: green;

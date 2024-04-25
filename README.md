@@ -131,10 +131,13 @@ pnpm add lint-staged -D
 
 9. 配置 commitlint 校验 git commit 信息
    cmmitlint 是一个用于校验 Git commit 信息的工具。它可以帮助我们确保提交信息符合指定的格式，从而减少代码审查的难度.
+
    ```bash
    pnpm add @commitlint/config-conventional @commitlint/cli -D
    ```
+
    在根目录下创建 .commitlintrc.js 文件，内容如下：
+
    ```js
    export default {
      ignores: [commit => commit.includes('init')],
@@ -169,3 +172,9 @@ pnpm add lint-staged -D
      }
    }
    ```
+
+10. vite 作为子应用只需切换到 iframe 沙箱
+    ```html
+    <micro-app name="xxx" url="xxx" iframe></micro-app>
+    ```
+11. vite 作为子应用需要配置跨域，本身就支持跨域

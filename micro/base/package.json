@@ -12,12 +12,11 @@
     "lint": "pnpm lint:eslint && pnpm lint:styles"
   },
   "dependencies": {
-    "ql-components": "workspace:^",
-    "tailwindcss": "^3.4.3"
+    "@micro-zoe/micro-app": "1.0.0-rc.4",
+    "ql-components": "workspace:^"
   },
   "devDependencies": {
     "ql-styles": "workspace:^",
-    "ql-tailwind-config": "workspace:^",
-    "vite-plugin-svg-icons": "^2.0.1"
+    "ql-tailwind-config": "workspace:^"
   }
 }
