@@ -22,6 +22,8 @@ module.exports = {
   },
   // 规则地址：https://zh-hans.eslint.org/docs/latest/rules/
   rules: {
+    // 基于 eslint-plugin-vue 双标签无内容时自动闭合
+    'vue/html-self-closing': 'warn',
     // 禁止使用 console 对象，将其视为警告。
     'no-console': 'warn',
     // 禁止使用 var 声明变量，将其视为错误。

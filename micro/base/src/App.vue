@@ -1,12 +1,12 @@
 <template>
   <div>
-    <i class="el-icon-eleme" style="font-size: 40px"></i>
+    <i class="el-icon-eleme" style="font-size: 40px" />
     <QlSvgIcon
       name="vue"
       color="red"
       icon-title="svg图标提示语"
       class-name="menu-svg-icon"
-    ></QlSvgIcon>
+    />
     <!-- tailwindcss-config -->
     <div class="text-2xl text-yellow-800">TailWindCss-Config</div>
     <ql-button />
@@ -22,8 +22,7 @@
       active-color="#13ce66"
       inactive-color="#ff4949"
       @change="changeTheme"
-    >
-    </el-switch>
+    />
     <!-- 切换 -->
     <div class="mt-4">
       <el-switch
@@ -31,8 +30,7 @@
         active-color="#13ce66"
         inactive-color="#ff4949"
         @change="changeDefauit"
-      >
-      </el-switch>
+      />
     </div>
 
     <el-card class="w-2/3 mx-auto mt-4">
@@ -44,12 +42,12 @@
         class="demo-ruleForm"
       >
         <el-form-item label="活动名称" prop="name">
-          <el-input v-model="ruleForm.name"></el-input>
+          <el-input v-model="ruleForm.name" />
         </el-form-item>
         <el-form-item label="活动区域" prop="region">
           <el-select v-model="ruleForm.region" placeholder="请选择活动区域">
-            <el-option label="区域一" value="shanghai"></el-option>
-            <el-option label="区域二" value="beijing"></el-option>
+            <el-option label="区域一" value="shanghai" />
+            <el-option label="区域二" value="beijing" />
           </el-select>
         </el-form-item>
         <el-form-item label="活动时间" required>
@@ -60,7 +58,7 @@
                 placeholder="选择日期"
                 v-model="ruleForm.date1"
                 style="width: 100%"
-              ></el-date-picker>
+              />
             </el-form-item>
           </el-col>
           <el-col class="line" :span="2">-</el-col>
@@ -70,29 +68,29 @@
                 placeholder="选择时间"
                 v-model="ruleForm.date2"
                 style="width: 100%"
-              ></el-time-picker>
+              />
             </el-form-item>
           </el-col>
         </el-form-item>
         <el-form-item label="即时配送" prop="delivery">
-          <el-switch v-model="ruleForm.delivery"></el-switch>
+          <el-switch v-model="ruleForm.delivery" />
         </el-form-item>
         <el-form-item label="活动性质" prop="type">
           <el-checkbox-group v-model="ruleForm.type">
-            <el-checkbox label="美食/餐厅线上活动" name="type"></el-checkbox>
-            <el-checkbox label="地推活动" name="type"></el-checkbox>
-            <el-checkbox label="线下主题活动" name="type"></el-checkbox>
-            <el-checkbox label="单纯品牌曝光" name="type"></el-checkbox>
+            <el-checkbox label="美食/餐厅线上活动" name="type" />
+            <el-checkbox label="地推活动" name="type" />
+            <el-checkbox label="线下主题活动" name="type" />
+            <el-checkbox label="单纯品牌曝光" name="type" />
           </el-checkbox-group>
         </el-form-item>
         <el-form-item label="特殊资源" prop="resource">
           <el-radio-group v-model="ruleForm.resource">
-            <el-radio label="线上品牌商赞助"></el-radio>
-            <el-radio label="线下场地免费"></el-radio>
+            <el-radio label="线上品牌商赞助" />
+            <el-radio label="线下场地免费" />
           </el-radio-group>
         </el-form-item>
         <el-form-item label="活动形式" prop="desc">
-          <el-input type="textarea" v-model="ruleForm.desc"></el-input>
+          <el-input type="textarea" v-model="ruleForm.desc" />
         </el-form-item>
         <el-form-item>
           <el-button type="primary" @click="submitForm('ruleForm')"
@@ -103,14 +101,12 @@
       </el-form>
     </el-card>
     <div class="w-2/3 mx-auto mt-10">
-      <MyTable></MyTable>
+      <MyTable />
       <!-- 90 -->
       <el-table :data="tableData" style="width: 100%" class="mt-10" border>
-        <el-table-column prop="date" label="日期" width="180">
-        </el-table-column>
-        <el-table-column prop="name" label="姓名" width="180">
-        </el-table-column>
-        <el-table-column prop="address" label="地址"> </el-table-column>
+        <el-table-column prop="date" label="日期" width="180" />
+        <el-table-column prop="name" label="姓名" width="180" />
+        <el-table-column prop="address" label="地址" />
       </el-table>
     </div>
   </div>

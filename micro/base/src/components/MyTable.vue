@@ -3,8 +3,8 @@
     <p class="text-2xl font-bold text-gray-400">MyTable</p>
 
     <el-table :data="tableData" style="width: 100%">
-      <el-table-column label="Date" prop="date"> </el-table-column>
-      <el-table-column label="Name" prop="name"> </el-table-column>
+      <el-table-column label="Date" prop="date" />
+      <el-table-column label="Name" prop="name" />
     </el-table>
 
     <el-table
@@ -18,8 +18,8 @@
       "
       style="width: 100%"
     >
-      <el-table-column label="Date" prop="date"> </el-table-column>
-      <el-table-column label="Name" prop="name"> </el-table-column>
+      <el-table-column label="Date" prop="date" />
+      <el-table-column label="Name" prop="name" />
       <el-table-column align="left" label="操作">
         <template slot-scope="scope">
           <el-button size="mini" @click="handleEdit(scope.$index, scope.row)"
