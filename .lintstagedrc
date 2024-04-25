@@ -13,6 +13,9 @@
   "*.{css,scss,html}": [
     "prettier --cache --ignore-unknown --write"
   ],
+  "micro/**/*.{vue,css,scss,html}": [
+    "stylelint --fix"
+  ],
   "*.md": [
     "prettier --cache --ignore-unknown --write"
   ]
