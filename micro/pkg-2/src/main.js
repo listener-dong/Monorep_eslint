@@ -9,13 +9,10 @@ import 'ql-styles/tailwind.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
-// main.js
+// 主题色切换
 import '@/theme/index.scss'
-// import './theme/#134fb0/index.css'
-// import './theme/#2bae85/index.css'
 
 import 'virtual:svg-icons-register' // 支持 svg
-import 'ql-styles/index.scss'
 
 let app = null
 

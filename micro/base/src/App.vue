@@ -63,7 +63,8 @@
 
       <!-- 子应用 -->
       <el-col :span="12">
-        <el-card> <MicroOne /> </el-card>
+        <el-card class="mb-2"> <MicroOne /> </el-card>
+        <el-card> <MicroTwo /> </el-card>
       </el-col>
       <!-- 子应用 -->
     </el-row>
@@ -72,10 +73,17 @@
 <script>
 import { QlButton, QlSvgIcon } from 'ql-components'
 import MicroOne from '@/components/MicroOne'
+import MicroTwo from '@/components/MicroTwo'
 import Forms from '@/components/Forms'
 
 export default {
-  components: { QlButton, QlSvgIcon, MicroOne, Forms },
+  components: {
+    QlButton,
+    QlSvgIcon,
+    MicroOne,
+    Forms,
+    MicroTwo
+  },
   data() {
     return {
       data: [],

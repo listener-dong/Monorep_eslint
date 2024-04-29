@@ -10,6 +10,7 @@
     "lint:eslint": "pnpm run -r lint:eslint",
     "lint:styles": "pnpm run -r lint:styles",
     "lint": "pnpm run -r lint",
+    "build:all": "find micro -maxdepth 1 -type d -not -path 'micro' -exec sh -c '(cd {} && pnpm build)' \\;",
     "prepare": "husky",
     "preinstall": "npx only-allow pnpm"
   },

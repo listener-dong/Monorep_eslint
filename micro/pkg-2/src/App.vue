@@ -42,8 +42,14 @@ export default {
   methods: {
     toggleTheme(color) {
       this.theme = color
+      const __IS_MICRO_APP = window.__MICRO_APP_ENVIRONMENT__
+      console.log('__IS_MICRO_APP', __IS_MICRO_APP)
       // bus.$emit('changeTheme', color)
-      this.toggleClass(document.body, `custom-${color}`)
+      const __MICO_BODY = __IS_MICRO_APP
+        ? document.querySelector('micro-app-body')
+        : document.body
+      console.log('__MICO_BODY', __MICO_BODY)
+      this.toggleClass(__MICO_BODY, `custom-${color}`)
       localStorage.setItem('theme', color)
     },
 
