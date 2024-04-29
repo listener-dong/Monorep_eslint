@@ -1,0 +1,7 @@
+/* 每个主题特有的设置 */
+.theme-#{$theme-name} {
+  .bg-color {
+    background-color: $theme-bg-color;
+    color: $theme-text-color;
+  }
+}
