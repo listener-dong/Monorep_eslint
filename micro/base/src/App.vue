@@ -43,18 +43,17 @@
 
     <div
       class="
+        text-2xl
         mt-4
         h-[80px]
         text-center
         border border-green-500
         bg-color
         w-[200px]
-        leading-[80px]
         font-bold
-        text-2xl
       "
     >
-      主题切换
+      <div class="leading-[80px]">主题切换</div>
     </div>
 
     <el-row type="flex" :gutter="20">
