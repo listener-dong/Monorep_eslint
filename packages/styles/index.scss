@@ -1,7 +1,7 @@
-@import "./theme.scss";
+// @import "./theme.scss";
 /* 暗黑主题 */
-html.dark {
+.dark {
   /* element ui 主题 暗黑模式 */
-  @import 'element-theme-dark';
-  $--background-color-base: #F7F8FA;
+  @import './dark.scss';
+  $--background-color-base: #f7f8fa;
 }

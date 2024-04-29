@@ -1,7 +1,9 @@
 <template>
   <div class="px-12">
     <!-- tailwindcss-config -->
-    <div class="text-2xl text-yellow-800">TailWindCss-Config</div>
+    <div class="text-2xl text-yellow-800 dark:text-white">
+      TailWindCss-Config
+    </div>
     <ql-button />
     <div class="test">Nan Fang hospity</div>
     <div class="flex">
@@ -140,15 +142,27 @@ export default {
   },
   mounted() {
     // 加载主题
-    document.body.className = `theme-default`
+    // document.body.className = `theme-default`
   },
   methods: {
     changeTheme(val) {
+      let microAppBodies = document.getElementsByTagName('micro-app-body')
+      console.log(microAppBodies)
       // console.log(val)
       if (val) {
         document.documentElement.classList.add('dark')
+        for (let i = 0; i < microAppBodies.length; i++) {
+          let microAppBody = microAppBodies[i]
+          // 在这里执行对 micro-app-body 标签的操作
+          microAppBody.classList.add('dark')
+        }
       } else {
         document.documentElement.classList.remove('dark')
+        for (let i = 0; i < microAppBodies.length; i++) {
+          let microAppBody = microAppBodies[i]
+          // 在这里执行对 micro-app-body 标签的操作
+          microAppBody.classList.remove('dark')
+        }
       }
     },
     submitForm(formName) {

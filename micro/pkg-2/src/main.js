@@ -13,6 +13,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import '@/theme/index.scss'
 
 import 'virtual:svg-icons-register' // 支持 svg
+import 'ql-styles/index.scss'
 
 let app = null
 

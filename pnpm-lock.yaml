@@ -142,6 +142,9 @@ importers:
       element-theme-chalk:
         specifier: ^2.15.14
         version: 2.15.14
+      element-theme-dark:
+        specifier: ^1.0.3
+        version: 1.0.3
       gulp:
         specifier: ^5.0.0
         version: 5.0.0
@@ -160,11 +163,7 @@ importers:
 
   packages/components: {}
 
-  packages/styles:
-    devDependencies:
-      element-theme-dark:
-        specifier: ^1.0.3
-        version: 1.0.3
+  packages/styles: {}
 
   packages/tailwind-config:
     dependencies:

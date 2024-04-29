@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="text-3xl font-black text-yellow-500">PKG-2</h1>
+    <h1 class="text-3xl font-black text-yellow-500 dark:text-pink-500">
+      PKG-2
+    </h1>
     <HelloWorld />
     <Bar />
     <el-row style="margin-bottom: 15px">
@@ -14,6 +16,9 @@
     <el-dropdown class="avatar-container" trigger="hover">
       <el-button type="primary">切换主题</el-button>
       <el-dropdown-menu slot="dropdown" class="user-dropdown">
+        <el-dropdown-item @click.native="toggleTheme('')">
+          <span style="display: block">默认</span>
+        </el-dropdown-item>
         <el-dropdown-item @click.native="toggleTheme('2bae85')">
           <span style="display: block">亚丁绿</span>
         </el-dropdown-item>
@@ -23,6 +28,23 @@
         </el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>
+    <div class="mt-4">
+      <el-alert title="成功提示的文案" type="success" effect="dark" />
+    </div>
+    <div class="mt-4">
+      <el-alert title="消息提示的文案" type="info" effect="dark" />
+    </div>
+    <div class="mt-4">
+      <el-alert title="警告提示的文案" type="warning" effect="dark" />
+    </div>
+    <div class="mt-4">
+      <el-alert title="错误提示的文案" type="error" effect="dark" />
+    </div>
+    <el-table :data="tableData" style="width: 100%" class="mt-10" border>
+      <el-table-column prop="date" label="日期" width="180" />
+      <el-table-column prop="name" label="姓名" width="180" />
+      <el-table-column prop="address" label="地址" />
+    </el-table>
   </div>
 </template>
 <script>
@@ -32,7 +54,28 @@ export default {
   components: { HelloWorld, Bar },
   data() {
     return {
-      data: []
+      tableData: [
+        {
+          date: '2016-05-02',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
+        },
+        {
+          date: '2016-05-04',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1517 弄'
+        },
+        {
+          date: '2016-05-01',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1519 弄'
+        },
+        {
+          date: '2016-05-03',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1516 弄'
+        }
+      ]
     }
   },
   mounted() {

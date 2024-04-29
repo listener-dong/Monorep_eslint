@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "element-theme-chalk": "^2.15.14",
+    "element-theme-dark": "^1.0.3",
     "gulp": "^5.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-css-wrap": "^0.1.2",
