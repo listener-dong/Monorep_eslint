@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:eslint": "eslint \"**/*.{js,jsx,vue}\" --fix",
+    "lint:styles": "stylelint \"**/*.{css,scss,vue}\" --fix",
+    "lint": "pnpm lint:eslint && pnpm lint:styles",
+    "gulp": "gulp css-wrap"
+  },
+  "devDependencies": {
+    "element-theme-chalk": "^2.15.14",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-css-wrap": "^0.1.2",
+    "ql-styles": "workspace:^",
+    "ql-tailwind-config": "workspace:^"
+  }
+}

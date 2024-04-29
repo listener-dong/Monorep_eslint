@@ -1,0 +1,21 @@
+:root {
+  position: relative;
+  top: 80px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(255 255 255 / 87%);
+  color-scheme: light dark;
+  background-color: #242424;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  font-synthesis: none;
+}
+
+div {
+  position: relative;
+  top: 10px;
+  height: 10px;
+  color: red;
+}

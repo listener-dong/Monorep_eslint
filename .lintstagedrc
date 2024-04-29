@@ -9,7 +9,7 @@
   "package.json": ["prettier --cache --write"],
   "*.vue": ["prettier --write", "eslint --cache --fix"],
   "*.{css,scss,html}": ["prettier --cache --ignore-unknown --write"],
-  "!(packages/styles)**,*.{css,scss,html,vue}": [
+  "!(**/theme/**),!(packages/styles)**,*.{css,scss,html,vue}": [
     "stylelint --fix --allow-empty-input"
   ],
   "*.md": ["prettier --cache --ignore-unknown --write"]
