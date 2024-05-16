@@ -4,6 +4,7 @@
     <div class="text-2xl text-yellow-800 dark:text-white">
       TailWindCss-Config
     </div>
+    <div class="text-primary">Hello primary</div>
     <ql-button />
     <div class="test">Nan Fang hospity</div>
     <div class="flex">
